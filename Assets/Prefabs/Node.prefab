@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4908605087349460568}
   - component: {fileID: 6257115780602249761}
-  - component: {fileID: 3429327904787800363}
   - component: {fileID: 2627181771992467843}
+  - component: {fileID: 3429327904787800363}
+  - component: {fileID: -6774772202187220473}
   m_Layer: 0
   m_Name: Node
   m_TagString: Untagged
@@ -41,6 +42,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7731115518362438383}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &2627181771992467843
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7731115518362438383}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &3429327904787800363
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -82,16 +96,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2627181771992467843
-BoxCollider:
+--- !u!114 &-6774772202187220473
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7731115518362438383}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919c1dd21f2c0174b80a44e05ffd50a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 0.46226418, g: 0.44700074, b: 0.44700074, a: 0}
+  positionOffset: {x: 0, y: 0.5, z: 0}
