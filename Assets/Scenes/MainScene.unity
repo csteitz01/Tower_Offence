@@ -4409,14 +4409,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 729913275009802169, guid: 38a27525158b87b469dc9e446c9861f7, type: 3}
+      propertyPath: m_PreferredWidth
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 729913275009802169, guid: 38a27525158b87b469dc9e446c9861f7, type: 3}
+      propertyPath: m_PreferredHeight
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 729913275009802170, guid: 38a27525158b87b469dc9e446c9861f7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 929842948}
     - target: {fileID: 729913275009802170, guid: 38a27525158b87b469dc9e446c9861f7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseAnotherTurret
+      value: PurchaseMissleLauncher
       objectReference: {fileID: 0}
+    - target: {fileID: 729913275009802171, guid: 38a27525158b87b469dc9e446c9861f7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 54ef1d6ead9807d40be5331efb93bba2, type: 3}
     - target: {fileID: 729913275009802171, guid: 38a27525158b87b469dc9e446c9861f7, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -4431,7 +4443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 729913275009802175, guid: 38a27525158b87b469dc9e446c9861f7, type: 3}
       propertyPath: m_Name
-      value: AnotherTurretItem
+      value: MissleLauncherItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a27525158b87b469dc9e446c9861f7, type: 3}
@@ -15410,7 +15422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 3265225232780380922, guid: ec6220a1025411d4ab0051309265649d, type: 3}
-  anotherTurretPrefab: {fileID: 3265225232780380922, guid: a9dc0c80d2b19b146b6997856eb7d24b, type: 3}
+  missleLauncherPrefab: {fileID: 865964504284565454, guid: 08d8c899e40b30448acafda466e44d04, type: 3}
 --- !u!1001 &2054852355
 PrefabInstance:
   m_ObjectHideFlags: 0
