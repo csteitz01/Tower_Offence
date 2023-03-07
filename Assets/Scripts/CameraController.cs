@@ -13,6 +13,11 @@ public class CameraController : MonoBehaviour
     // I screwed up with node placements, so yes this looks weird but it is correct
     void Update()
     {
+        if(GameManager.GameIsOver)
+        {
+            this.enabled = false;
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.Escape))
             doMovement = !doMovement;
 
