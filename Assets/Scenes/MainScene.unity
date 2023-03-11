@@ -4763,7 +4763,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 569567965}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1111132842}
+        m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &569567965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8444,13 +8456,13 @@ MonoBehaviour:
   missileLauncher:
     prefab: {fileID: 865964504284565454, guid: 08d8c899e40b30448acafda466e44d04, type: 3}
     cost: 250
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 865964504284565454, guid: 2ebf94e5850a5914490230e9a7e641a7, type: 3}
+    upgradeCost: 150
   laserBeamer:
     prefab: {fileID: 5074333244861774027, guid: b83bcca48952c2745a4efd99ba35fd3f, type: 3}
     cost: 350
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 5074333244861774027, guid: 0072ee4954df12f4fadc0162a658f090, type: 3}
+    upgradeCost: 250
 --- !u!1001 &930473627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10660,6 +10672,7 @@ MonoBehaviour:
   ui: {fileID: 1797147839}
   upgradeCost: {fileID: 900043632}
   upgradeButton: {fileID: 869452291}
+  sellAmount: {fileID: 1340277281}
 --- !u!1001 &1118114424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11820,7 +11833,7 @@ GameObject:
   - component: {fileID: 1340277282}
   - component: {fileID: 1340277281}
   m_Layer: 0
-  m_Name: Cost
+  m_Name: Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11865,7 +11878,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '$50
+  m_text: '$125
 
 '
   m_isRightToLeft: 0
@@ -18942,6 +18955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildEffect: {fileID: 3452699261069172896, guid: a3d3338b2ca959a44b995e475cae8c6e, type: 3}
+  sellEffect: {fileID: 3452699261069172896, guid: f94f10f8d37231344ac1b94317bd2425, type: 3}
   nodeUI: {fileID: 1111132842}
 --- !u!114 &2045028633
 MonoBehaviour:
@@ -18955,7 +18969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8debc13f1d205e146ab6aad1744459ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 400
+  startMoney: 40000
   startLives: 1
 --- !u!114 &2045028634
 MonoBehaviour:

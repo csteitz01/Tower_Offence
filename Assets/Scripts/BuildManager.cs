@@ -8,13 +8,14 @@ public class BuildManager : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogError("More thatn one BuildManager in scene!");
+            Debug.LogError("More than one BuildManager in scene!");
             return;
         }
         instance = this;    
     }
 
     public GameObject buildEffect;
+    public GameObject sellEffect;
 
     private TurretBlueprint turretToBuild;
     private Node selectedNode;
