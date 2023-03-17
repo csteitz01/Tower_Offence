@@ -3,7 +3,6 @@ using UnityEngine.EventSystems;
 
 public class Node : MonoBehaviour
 {
-
     public Color hoverColor;
     public Color notEnoughMoneyColor;
     public Vector3 positionOffset;
