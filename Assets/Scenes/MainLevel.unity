@@ -12422,6 +12422,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roundsText: {fileID: 991851914}
+  menuSceneName: MainMenu
+  sceneFader: {fileID: 8118290582821318460}
 --- !u!95 &1319365085
 Animator:
   serializedVersion: 3
@@ -20123,9 +20125,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1155ac382ec8514a98ed04dd9055fd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 3386411928317177667, guid: ee98696831eb85947acb1fa56721751f, type: 3}
+  waves:
+  - enemy: {fileID: 3386411928317177679, guid: ee98696831eb85947acb1fa56721751f, type: 3}
+    count: 1
+    rate: 2
+  - enemy: {fileID: 3386411928317177679, guid: ee98696831eb85947acb1fa56721751f, type: 3}
+    count: 2
+    rate: 2
+  - enemy: {fileID: 3386411928317177679, guid: ee98696831eb85947acb1fa56721751f, type: 3}
+    count: 5
+    rate: 2
+  - enemy: {fileID: 3386411928317177679, guid: ea4f5b14d99b27541ac6321e2b714998, type: 3}
+    count: 3
+    rate: 1
+  - enemy: {fileID: 3386411928317177679, guid: f62e062537958e64795600b9e21c06fb, type: 3}
+    count: 10
+    rate: 3
   spawnPoint: {fileID: 1466381867}
-  timeBetweenWaves: 10
+  timeBetweenWaves: 2
   waveCountdownText: {fileID: 1394607548}
 --- !u!114 &2045028632
 MonoBehaviour:

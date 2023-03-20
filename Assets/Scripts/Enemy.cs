@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 
     public float startHealth = 100;
     private float health;
+    private bool isDead;
 
     public int worth = 50;
 
@@ -37,10 +38,21 @@ public class Enemy : MonoBehaviour
 
     void Die ()
     {
+        if(health <= 0)
+        {
+            if(isDead)
+            {
+                return;
+            }
+            isDead = true;
+        }
+        
         PlayerStats.Money += worth;
 
         GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(effect, 5f);
+
+        WaveSpawner.EnemiesAlive--;
         
         Destroy(gameObject);
     }
