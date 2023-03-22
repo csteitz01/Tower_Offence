@@ -345,6 +345,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fader: {fileID: 189582810}
+  levelButtons:
+  - {fileID: 584166689}
+  - {fileID: 854230083}
 --- !u!4 &149638722
 Transform:
   m_ObjectHideFlags: 0
@@ -758,6 +761,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347189711}
   m_CullTransparentMesh: 1
+--- !u!114 &584166689 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2462019807845641657, guid: c2453b74c49daf74281f50ca22855433, type: 3}
+  m_PrefabInstance: {fileID: 6047479106910805757}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &686725721 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5329384635546352227, guid: c2453b74c49daf74281f50ca22855433, type: 3}
@@ -949,6 +963,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eeecd8df926dcde44aca00ad373a2578, type: 3}
+--- !u!114 &854230083 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2462019807845641657, guid: c2453b74c49daf74281f50ca22855433, type: 3}
+  m_PrefabInstance: {fileID: 1486441922}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,6 +1570,10 @@ PrefabInstance:
     - target: {fileID: 5329384635546352227, guid: c2453b74c49daf74281f50ca22855433, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709014423720144120, guid: c2453b74c49daf74281f50ca22855433, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6689091414963698202, guid: c2453b74c49daf74281f50ca22855433, type: 3}
       propertyPath: m_Name
