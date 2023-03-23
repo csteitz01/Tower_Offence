@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
 
     public float startHealth = 100;
     private float health;
-    private bool isDead;
+    private bool isDead = false;
 
     public int worth = 50;
 
@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
 
         healthBar.fillAmount = health / startHealth;
 
-        if(health <= 0)
+        if(health <= 0 && !isDead)
         {
             Die();
         }
@@ -38,14 +38,7 @@ public class Enemy : MonoBehaviour
 
     void Die ()
     {
-        if(health <= 0)
-        {
-            if(isDead)
-            {
-                return;
-            }
-            isDead = true;
-        }
+        isDead = true;
         
         PlayerStats.Money += worth;
 
